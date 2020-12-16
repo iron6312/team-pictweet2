@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2020_12_16_072759) do
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
-  create_table "tweets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "tweets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "name"
     t.string "text"
     t.text "image"
